@@ -15,7 +15,7 @@ body {
 .order-summary-card {
   background-color: #ffff;
   max-width: 22rem;
-  margin: 3rem auto;
+  margin: 2.2rem auto;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
