@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(225, 100%, 94%);
+  font-family: "Red Hat display", sans-serif;
+  line-height: 1;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.75rem;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+}
+.order-summary-card {
+  background-color: #ffff;
+  max-width: 22rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+
+.order-summary-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.hero-text {
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.pricing-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.25rem 1.25rem;
+  border-radius: 0.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 0;
+}
+.plan-details {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.plan-details div {
+  margin-left: 1rem;
+}
+.music-icon {
+  width: 2.5rem;
+}
+h4 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+.change-link:link,
+.change.link:visited {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.change-link:hover,
+.change-link:focus {
+  text-decoration: none;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.payment:link,
+.payment:visited {
+  display: inline-block;
+  background-color: rgb(56, 41, 224);
+  padding: 0.9rem 4rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  color: white;
+  border: none;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0px 0.9rem 0.9rem rgba(56, 41, 224, 0.199);
+  cursor: pointer;
+}
+.payment:hover,
+.payment:active {
+  background-color: rgba(57, 44, 233, 0.87);
+}
+.cancel-order:link,
+.cancel-order:visited {
+  display: inline-block;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.cancel-order:hover,
+.cancel-order:active {
+  text-decoration: underline;
+}
+@media (max-width: 24em) {
+  body {
+    font-size: 0.95rem;
+  }
+  .order-summary-card {
+    max-width: 20rem;
+  }
+  .hero-text {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .pricing-plan {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .buttons .payment,
+  .buttons .cancel-order {
+    font-size: 0.9rem;
+  }
+  .buttons .payment {
+    padding: 1rem 4rem;
+    margin: 1.5rem;
+    margin-bottom: 0.625rem;
+  }
+}
